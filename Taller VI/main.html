@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input {
+      margin: 5px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #resultado {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Calculadora con 10 operaciones</h1>
+
+  <!-- Inputs para ingresar los números -->
+  <input type="number" id="num1" placeholder="Ingrese el primer número">
+  <input type="number" id="num2" placeholder="Ingrese el segundo número">
+
+  <!-- Botones para cada operación -->
+  <div>
+    <button onclick="calcular('suma')">Sumar</button>
+    <button onclick="calcular('resta')">Restar</button>
+    <button onclick="calcular('multiplicacion')">Multiplicar</button>
+    <button onclick="calcular('division')">Dividir</button>
+    <button onclick="calcular('potencia')">Potencia</button>
+    <button onclick="calcular('modulo')">Módulo</button>
+    <button onclick="calcular('raiz')">Raíz Cuadrada</button>
+    <button onclick="calcular('logaritmo')">Logaritmo</button>
+    <button onclick="calcular('maximo')">Máximo</button>
+    <button onclick="calcular('minimo')">Mínimo</button>
+  </div>
+
+  <!-- Mostrar el resultado -->
+  <p id="resultado">Resultado: </p>
+
+  <!-- Vincular el archivo JS externo -->
+  <script src="operations.js"></script>
+
+</body>
+</html>
